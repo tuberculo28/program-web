@@ -1,0 +1,32 @@
+#content{
+    background-color: rgb(8, 8, 10);
+}
+
+#img{
+    border-color: blue;
+    
+}
+.griddy{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    gap: 3em;
+    
+}
+.letra{
+    color: white;
+
+}
+#titulo{
+    font-size: 5em;
+    background-color: azure;
+
+}
+.personaje{
+    background-color: rgb(114, 114, 114);
+    display: flex;
+    border-radius: 5px 30px 45px 60px;
+
+
+}

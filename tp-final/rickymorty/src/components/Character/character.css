@@ -1,32 +1,38 @@
 #content{
-    background-color: rgb(8, 8, 10);
+    background-color: rgb(27, 27, 31);
 }
-
-#img{
-    border-color: blue;
-    
+.imggg{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
 }
 .griddy{
     display: grid;
-    grid-auto-rows: auto;
+    grid-auto-rows: 10%;
     grid-template-columns: repeat(3,1fr);
     list-style: none;
     gap: 3em;
-    
 }
 .letra{
-    color: white;
-
+    color: white;   
+    
 }
 #titulo{
-    font-size: 5em;
+    font-size: 7em;
     background-color: azure;
-
+    text-align: center;
 }
 .personaje{
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(44, 44, 44);
     display: flex;
-    border-radius: 5px 30px 45px 60px;
-
-
+    border-radius: 10px;   
+}
+.hola{
+    padding-left: 40px;
+}
+.letraos{
+    color: rgb(136, 136, 136);
+}
+.letra:hover{
+    color:#ffae17;
 }

@@ -13,15 +13,23 @@ export function Character(){
         return(
             <><div id="content">
                 <header><h1 id="titulo">The Rick And Morty API</h1></header>
+                
             <ul className="griddy">
                 {
                 character.map((item, index)=>(
                     <li className="personaje" key={index}>
                         <img className="imggg" src={item.image} alt="" />
-                        <h3 className="letra">{item.name}</h3>
-                        <p className="letra">{item.status} - {item.species} </p>
- 
+                        <div className="hola">
+                            <h3 className="letra">{item.name}</h3>
+                            <p className="letra"> 🟢 {item.status} - {item.species} </p>
+                            <p className="letraos">Last known location:</p>
+                            <p className="letra">{item.origin.name}</p>
+                            <p className="letraos">First seen in:</p>
+                            <p className="letra"></p>
+
+                        </div>
                     </li>
+                    
                 ))
                 }
             </ul>

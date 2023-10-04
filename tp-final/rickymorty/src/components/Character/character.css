@@ -1,3 +1,4 @@
+
 #content{
     background-color: rgb(27, 27, 31);
 }
@@ -9,7 +10,7 @@
 .griddy{
     display: grid;
     grid-auto-rows: 10%;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,31%);
     list-style: none;
     gap: 3em;
 }
@@ -21,6 +22,7 @@
     font-size: 7em;
     background-color: azure;
     text-align: center;
+    font-family: sans-serif;    
 }
 .personaje{
     background-color: rgb(44, 44, 44);
@@ -28,7 +30,7 @@
     border-radius: 10px;   
 }
 .hola{
-    padding-left: 40px;
+    padding-left: 30px;
 }
 .letraos{
     color: rgb(136, 136, 136);

@@ -7,7 +7,7 @@ export function Character(){
     character.map((item)=>{
         firtsep.push(item.episode[0])
     })
-    
+//    useEffect
     const[character, setCharacter] = useState([])
 //useState        
         useEffect(()=>{

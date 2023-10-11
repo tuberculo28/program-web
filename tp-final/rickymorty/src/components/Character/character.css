@@ -1,6 +1,7 @@
 
+
 #content{
-    background-color: rgb(27, 27, 31);
+    background-color: rgb(27, 27, 31); 
 }
 .imggg{
     border-bottom-left-radius: 10px;
@@ -10,9 +11,9 @@
 .griddy{
     display: grid;
     grid-auto-rows: 10%;
-    grid-template-columns: repeat(3,31%);
+    grid-template-columns: repeat(3,32%);
     list-style: none;
-    gap: 3em;
+    gap:1em;
 }
 .letra{
     color: white;   

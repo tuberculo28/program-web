@@ -1,12 +1,28 @@
 import { useEffect, useState } from "react"
 import "./character.css"
 
+
+export default function Buttonepiso() {
+    function handleClick() {
+      alert('¡Me hiciste clic!');
+    }
+    
+    return (
+      <button onClick={handleClick}>
+        Hazme clic
+      </button>
+    );
+  }
+
+
 export function Character(){
     const[character, setCharacter] = useState([])
     const firtsep = []
+    
     character.map((item)=>{
         firtsep.push(item.episode[0])
     })
+
 //    useEffect
    
 //useState        
@@ -32,7 +48,10 @@ export function Character(){
                             <p className="letraos">Last known location:</p>
                             <p className="letra">{item.origin.name}</p>
                             <p className="letraos">First seen in:</p>
-                            <p className="letra"></p>
+                             <button onClick={function Buttonepiso() {
+                            alert('¡Me hiciste clic, estos son los episodios!')
+                            console.log(item.episode);
+                            }}>boton</button>
                         </div>
                     </li>
                     
@@ -44,3 +63,5 @@ export function Character(){
         );
 
 }
+
+

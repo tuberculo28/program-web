@@ -15,13 +15,23 @@ export default function Buttonepiso() {
   }
 
 
+
 export function Character(){
     const[character, setCharacter] = useState([])
     const firtsep = []
-    
-    character.map((item)=>{
-        firtsep.push(item.episode[0])
-    })
+
+
+    function buttonepiso(episodes) {
+  
+        episodes.map((item)=>{
+
+            const numeritos = item.slice(-2)
+            firtsep.push(numeritos)
+
+        })
+        console.log(firtsep)
+    }
+
 
 //    useEffect
    
@@ -48,10 +58,8 @@ export function Character(){
                             <p className="letraos">Last known location:</p>
                             <p className="letra">{item.origin.name}</p>
                             <p className="letraos">First seen in:</p>
-                             <button onClick={function Buttonepiso() {
-                            alert('¡Me hiciste clic, estos son los episodios!')
-                            console.log(item.episode);
-                            }}>boton</button>
+                             <button onClick={() => buttonepiso(item.episode)}
+                            >boton</button>
                         </div>
                     </li>
                     

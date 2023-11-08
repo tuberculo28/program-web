@@ -18,14 +18,19 @@ export default function Buttonepiso() {
 
 export function Character(){
     const[character, setCharacter] = useState([])
-    const firtsep = []
+    const [episodeChar, setEpisodeChar] = useState("")
+    let firtsep = []
 
 
-    function buttonepiso(episodes) {
-  
+    function buttonepiso(episodes, name) {
+        setEpisodeChar(name)
+        if(name !== episodeChar){
+            firtsep = []
+        }    
+
         episodes.map((item)=>{
 
-            const numeritos = item.slice(-2)
+            const numeritos = item.slice(40)
             firtsep.push(numeritos)
 
         })
@@ -41,6 +46,10 @@ export function Character(){
             .then(response => response.json())
             .then(data => setCharacter(data.results));
         },[setCharacter]);
+
+        useEffect(()=>{
+
+        },[])
         return(
             <><div id="content">
                 <header><h1 id="titulo">The Rick And Morty API</h1></header>
@@ -58,7 +67,7 @@ export function Character(){
                             <p className="letraos">Last known location:</p>
                             <p className="letra">{item.origin.name}</p>
                             <p className="letraos">First seen in:</p>
-                             <button onClick={() => buttonepiso(item.episode)}
+                             <button onClick={() => buttonepiso(item.episode, item.name)}
                             >boton</button>
                         </div>
                     </li>
